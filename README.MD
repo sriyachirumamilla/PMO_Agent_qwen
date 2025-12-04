@@ -46,10 +46,9 @@ Example:
 ## Screenshots
 
 ### Demo Code
-![Demo Code](config/Screenshots/demo-code.png.jpeg)
 
 ### Demo Working
-![Demo Working](config/Screenshots/demo-working.png.jpeg)
+
 
 
 ## 🚀 Quick Start
