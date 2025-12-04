@@ -30,6 +30,7 @@ Agent: 📋 Current tasks:
 3.Assign Task
 4.Update Task Status
 
+
 ## 🏗️ Architecture
 User Input
    ↓
@@ -42,6 +43,13 @@ Stateful Response
 Example:
 "Create task X" → create_task() → Tasks updated → Returns result
 
+## Screenshots
+
+### Demo Code
+![Demo Code](config/Screenshots/demo-code.png.jpeg)
+
+### Demo Working
+![Demo Working](config/Screenshots/demo-working.png.jpeg)
 
 
 ## 🚀 Quick Start
