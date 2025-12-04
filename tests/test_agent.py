@@ -322,7 +322,7 @@ class TestDataModels:
     
     def test_project_model_creation(self):
         """Test creating a Project model instance."""
-        project = Project(
+        project = project(
             id="PROJECT-001",
             name="Test Project",
             description="A test project",
