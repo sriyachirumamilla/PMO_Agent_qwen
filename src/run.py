@@ -4,7 +4,7 @@ PMO Agent Qwen - Interactive Mode (FIXED IMPORTS)
 import os
 import sys
 
-# FIX: Add CURRENT DIRECTORY to Python path
+
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 
 try:
@@ -13,11 +13,11 @@ try:
     print("✅ Imports successful!")
 except ImportError as e:
     print(f"❌ Import failed: {e}")
-    print("📁 Make sure agent_qwen.py is in the same folder as run.py")
+    print(" Make sure agent_qwen.py is in the same folder as run.py")
     sys.exit(1)
 
 if __name__ == "__main__":
-    print("🚀 PMO Agent Qwen - Interactive Mode")
+    print(" PMO Agent Qwen - Interactive Mode")
     print("=" * 60)
     
     # Quick demo

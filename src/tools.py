@@ -1,7 +1,3 @@
-"""
-Tools (functions) that the LLM agent can call to manage tasks.
-These are the "actions" the agent can take.
-"""
 
 from langchain.tools import tool
 from src.models import Task, Project, TaskStatus, TaskPriority, TASKS_DB, PROJECTS_DB

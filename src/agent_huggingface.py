@@ -1,12 +1,3 @@
-"""
-PMO Agent with Qwen Model via HuggingFace Pipeline
-Alternative approach using direct HuggingFace pipeline integration
-
-This is an alternative to agent_qwen.py using the same Qwen model
-but with different HuggingFace integration approach.
-
-Use this if agent_qwen.py has compatibility issues.
-"""
 
 from langchain.agents import create_agent
 from langchain_huggingface import HuggingFacePipeline
@@ -31,13 +22,7 @@ logger = logging.getLogger(__name__)
 
 
 def load_qwen_direct():
-    """
-    Load Qwen model directly without LangChain wrapper.
-    This is the alternative approach to load_qwen_model in agent_qwen.py
     
-    Returns:
-        Tuple of (model, tokenizer, device)
-    """
     model_name = os.getenv("QWEN_MODEL_NAME", "Qwen/Qwen2-1.5B-Instruct")
     device = 0 if torch.cuda.is_available() else -1
     
@@ -95,16 +80,6 @@ def load_qwen_direct():
 
 
 def create_pmo_agent_huggingface():
-    """
-    Create PMO agent with Qwen using HuggingFacePipeline wrapper.
-    
-    This is an alternative to create_pmo_agent_qwen() 
-    Use this if agent_qwen.py has compatibility issues.
-    
-    Returns:
-        LangChain Agent configured with Qwen model
-    """
-    
     print("\n" + "=" * 80)
     print("🚀 PMO AGENT - QWEN (HuggingFace Pipeline)")
     print("=" * 80)
@@ -194,10 +169,6 @@ Guidelines:
 
 
 def create_lightweight_huggingface_agent():
-    """
-    Create lightweight agent (Qwen2-0.5B) for slow machines.
-    Uses HuggingFace pipeline approach instead of LangChain wrapper.
-    """
     print("🚀 PMO AGENT (LIGHTWEIGHT - QWEN 0.5B - HuggingFace)")
     print("=" * 80)
     
@@ -209,14 +180,6 @@ def create_lightweight_huggingface_agent():
 
 
 def create_high_quality_huggingface_agent():
-    """
-    Create high-quality agent (Qwen2-7B) for powerful GPUs.
-    Uses HuggingFace pipeline approach for better control.
-    
-    Requirements:
-    - GPU with 16GB+ VRAM
-    - Takes longer to load and run
-    """
     print("🚀 PMO AGENT (HIGH-QUALITY - QWEN 7B - HuggingFace)")
     print("=" * 80)
     print("⚠️  Requires: GPU with 16GB+ VRAM")

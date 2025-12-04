@@ -1,7 +1,3 @@
-"""
-Data models for PMO task management.
-"""
-
 from pydantic import BaseModel, Field
 from typing import Optional, List
 from datetime import datetime
@@ -53,7 +49,5 @@ class Project(BaseModel):
     class Config:
         use_enum_values = True
 
-
-# In-memory storage (replace with database in production)
 TASKS_DB: dict = {}
 PROJECTS_DB: dict = {}

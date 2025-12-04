@@ -1,8 +1,3 @@
-"""
-PMO Task Management Agent with Qwen LLM
-100% Free, runs locally on your machine
-"""
-
 __version__ = "0.1.0"
 __author__ = "Your Name"
 __description__ = "LangChain PMO Agent using Qwen Model"

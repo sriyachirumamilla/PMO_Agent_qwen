@@ -133,7 +133,7 @@ def create_pmo_agent_qwen():
     print(f"  • Device:     {'GPU' if torch.cuda.is_available() else 'CPU'}")
     print()
     
-    # Load model and create pipeline (OPTIONAL - tools are instant anyway)
+    # Load model and create pipeline 
     model, tokenizer = load_qwen_model()
     
     text_pipeline = pipeline(

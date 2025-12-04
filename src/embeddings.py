@@ -1,7 +1,3 @@
-"""
-Free embeddings using Sentence Transformers.
-100% open-source, runs locally.
-"""
 
 from langchain_huggingface import HuggingFaceEmbeddings
 import os
